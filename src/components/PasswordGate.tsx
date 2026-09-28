@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState, useTransition, useLayoutEffect } from "react";
 import { useRouter } from "next/navigation";
 import { unlockProject } from "@/app/actions/unlock";
 
@@ -16,6 +16,36 @@ export default function PasswordGate({
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
 
+  // THE NUCLEAR OPTION: useLayoutEffect fires before the screen paints
+  useLayoutEffect(() => {
+    // 1. Tell the browser to ignore Next.js scroll memory
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    // 2. Temporarily strip any global smooth-scrolling classes
+    const html = document.documentElement;
+    html.style.scrollBehavior = "auto";
+    
+    // 3. Lock the body so the viewport CANNOT scroll down
+    document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.top = "0";
+    document.body.style.width = "100%";
+
+    // 4. Force the coordinates to absolute zero
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+
+    // Cleanup: When the user unlocks the project, release the lock so they can scroll the case study
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+      html.style.scrollBehavior = "";
+    };
+  }, []);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
@@ -23,7 +53,6 @@ export default function PasswordGate({
     startTransition(async () => {
       const res = await unlockProject(slug, password, lang);
       if (res.success) {
-        // If successful, refresh the current route to re-run the server component and reveal the case study
         router.refresh();
       } else {
         setError(res.error || "Access denied");
@@ -32,7 +61,11 @@ export default function PasswordGate({
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-[70vh] w-full max-w-md mx-auto text-center gap-8 px-6">
+    // Added a massive z-index and absolute absolute-zeroing inline styles as a failsafe
+    <div 
+      style={{ zIndex: 99999, minHeight: '100svh' }} 
+      className="flex flex-col items-center justify-center w-full max-w-md mx-auto text-center gap-8 px-6 absolute top-0 left-1/2 -translate-x-1/2 bg-surface-primary"
+    >
       <div className="flex flex-col gap-2">
         <h2 className="text-h2 font-bold text-content-primary">
           Protected Asset

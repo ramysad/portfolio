@@ -71,6 +71,8 @@
       "client": "ايكيا",
       "tags": ["استراتيجية تجربة المستخدم", "أنظمة التصميم", "أتمتة سير العمل", "تحسين معدل التحويل"],
       "image": "/images/casestudy-ikea-cover.jpg",
+      "protected": "true",
+      "password": "makeitpop",
       "expanded": {
         "agency": "ميماك أوجيلفي وماذر ذ.م.م - دبي",
         "role": "مدير تصميم تجربة المستخدم",
@@ -165,6 +167,8 @@
         "تكنولوجيا التعليم"
       ],
       "image": "/images/casestudy-aub-cover.webp",
+      "protected": "true",
+      "password": "makeitpop",
       "expanded": {
         "agency": "ميماك أوجيلفي وماذر ذ.م.م - دبي",
         "role": "مدير تصميم تجربة المستخدم",
@@ -244,6 +248,8 @@
       "client": "الفطيم العقارية",
       "tags": ["التحول الرقمي", "بنية واجهة المستخدم", "أنظمة التصميم"],
       "image": "/images/casestudy-afre-cover.jpg",
+      "protected": "true",
+      "password": "makeitpop",
       "expanded": {
         "agency": "ميماك أوجيلفي وماذر ذ.م.م - دبي",
         "role": "مدير تصميم تجربة المستخدم",
@@ -336,6 +342,8 @@
       "client": "نستله بروفيشنال",
       "tags": ["تجربة المستخدم", "واجهة المستخدم", "بنية B2B"],
       "image": "/images/casestudy-nestlepro-cover.jpg",
+      "protected": "true",
+      "password": "makeitpop",
       "expanded": {
         "agency": "ميماك أوجيلفي وماذر ذ.م.م - دبي",
         "role": "مدير تصميم تجربة المستخدم",

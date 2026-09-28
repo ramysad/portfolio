@@ -71,6 +71,8 @@
       "client": "IKEA",
       "tags": ["Stratégie UX", "Systèmes de Design", "Automatisation", "CRO"],
       "image": "/images/casestudy-ikea-cover.jpg",
+      "protected": "true",
+      "password": "makeitpop",
       "expanded": {
         "agency": "Memac Ogilvy and Mather LLC - Dubaï",
         "role": "Directeur du Design d'Expérience",
@@ -165,6 +167,8 @@
         "EdTech"
       ],
       "image": "/images/casestudy-aub-cover.webp",
+      "protected": "true",
+      "password": "makeitpop",
       "expanded": {
         "agency": "Memac Ogilvy and Mather LLC - Dubaï",
         "role": "Directeur du Design d'Expérience",
@@ -244,6 +248,8 @@
       "client": "Al-Futtaim Real Estate",
       "tags": ["Transformation Digitale", "Architecture UI", "Systèmes de Design"],
       "image": "/images/casestudy-afre-cover.jpg",
+      "protected": "true",
+      "password": "makeitpop",
       "expanded": {
         "agency": "Memac Ogilvy and Mather LLC - Dubaï",
         "role": "Directeur du Design d'Expérience",
@@ -336,6 +342,8 @@
       "client": "Nestlé Professional",
       "tags": ["UX", "UI", "Architecture B2B"],
       "image": "/images/casestudy-nestlepro-cover.jpg",
+      "protected": "true",
+      "password": "makeitpop",
       "expanded": {
         "agency": "Memac Ogilvy and Mather LLC - Dubaï",
         "role": "Directeur du Design d'Expérience",
