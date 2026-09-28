@@ -29,7 +29,7 @@ export default async function ProjectDetail({
   const currentCookieValue = cookieStore.get(`unlocked_${slug}`)?.value;
 
   // Hardened check to support both JSON booleans and stringified booleans
-  const isProtected = project.protected === true || project.protected === "true";
+  const isProtected = String(project.protected) === "true";
 
   const expectedToken =
     isProtected && project.password
