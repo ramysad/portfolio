@@ -1,0 +1,456 @@
+{
+  "nav": {
+    "about": "نبذة عني",
+    "work": "أعمالي",
+    "clients": "العملاء",
+    "contact": "اتصل بي",
+    "getInTouch": "تواصل معي ↗",
+    "projects": ["دراسة حالة ٠١", "دراسة حالة ٠٢", "دراسة حالة ٠٣", "دراسة حالة ٠٤"]
+  },
+  "cursor": {
+    "more": "المزيد عن هذاالمشروع",
+    "view": "عرض المشروع",
+    "next": "التالي",
+    "prev": "السابق"
+  },
+  "hero": {
+    "greeting": "مرحباً",
+    "intro": "أنا رامي،",
+    "roles": [
+      "مصمم استراتيجي",
+      "مهندس أنظمة تصميم",
+      "مصمم منتجات",
+      "تقني مبدع",
+      "مبتكر حلول للأعمال"
+    ],
+    "labels": {
+      "title": "مهندس تجارب المستخدم",
+      "year": "٢٠٢٦"
+    },
+    "stats": {
+      "projects": "مشروعاً منجزاً",
+      "experience": "سنوات من الخبرة"
+    },
+    "scroll": "قم بالتمرير لأسفل"
+  },
+  "about": {
+    "title": "هندسة التميز الرقمي على نطاق واسع.",
+    "subtitle": "أنا مصمم استراتيجي وتقني أعمل على بناء أنظمة رقمية قابلة للتطوير للعلامات التجارية الكبرى.",
+    "paragraph": "مع أكثر من ١٥ عاماً من الخبرة في سوق الشرق الأوسط وشمال أفريقيا، أتخصص في توحيد بنية تجربة المستخدم (UX) مع هندسة البرمجيات. من خلال الاستفادة من سير العمل المدمج بالذكاء الاصطناعي والنماذج الأولية المدعومة بالبرمجة، أساعد الفِرق على التصميم بذكاء أكبر، والإطلاق بشكل أسرع، ودفع نمو الأعمال دون المساومة على تجربة المستخدم.",
+    "competencies": {
+      "title": "الكفاءات الأساسية والخدمات",
+      "subtitle": "تأطير التنفيذ والقيادة من خلال الحلقة المستمرة لعملية التفكير التصميمي.",
+      "stages": [
+        {
+          "name": "الاكتشاف والتعاطف",
+          "tags": ["تدقيق تجربة وواجهة المستخدم", "التقييم الإرشادي", "المقارنة المرجعية التنافسية", "تخطيط رحلة المستخدم", "استراتيجية القنوات الشاملة"]
+        },
+        {
+          "name": "التحديد والهندسة",
+          "tags": ["استراتيجية تجربة المستخدم للمؤسسات", "بنية المعلومات (IA)", "تصميم الخدمات", "التحول الرقمي"]
+        },
+        {
+          "name": "الابتكار والنماذج الأولية",
+          "tags": ["أنظمة التصميم", "التصميم الذري", "تصميم المنتجات للهواتف أولاً", "التكامل البرمجي منخفض الكود"]
+        },
+        {
+          "name": "الاختبار والتطوير",
+          "tags": ["تحسين معدل التحويل (CRO)", "التخصيص الآلي", "سير العمل المدمج بالذكاء الاصطناعي", "تحليلات الأداء"]
+        },
+        {
+          "name": "قيادة التصميم",
+          "tags": ["التوجيه متعدد الوظائف", "بنية مسار العمل المرن (Agile)", "التوسع التشغيلي", "التوجيه القائم على البيانات"]
+        }
+      ]
+    }
+  },
+  "portfolio": [
+    {
+      "id": "01",
+      "slug": "ikea-design-systems",
+      "client": "ايكيا",
+      "tags": ["استراتيجية تجربة المستخدم", "أنظمة التصميم", "أتمتة سير العمل", "تحسين معدل التحويل"],
+      "image": "/images/casestudy-ikea-cover.jpg",
+      "expanded": {
+        "agency": "ميماك أوجيلفي وماذر ذ.م.م - دبي",
+        "role": "مدير تصميم تجربة المستخدم",
+        "clientLogo": "/images/logo-client-ikea.svg",
+        "about": "إطار تصميم منهجي وقابل للتطوير ونظام إنشاء محتوى تركيبي مبني مباشرة داخل فيجما.",
+        "theAsk": "لتحقيق مبيعات أعلى وكفاءة إعلامية، احتاجت الشركة إلى الانتقال من التواصل الجماهيري الواسع إلى توصيات منتجات مخصصة تعتمد على البيانات.",
+        "theProblem": "التصميم اليدوي لعشرات رسائل البريد الإلكتروني المخصصة لاختبارات A/B وشرائح العملاء المختلفة بطيء للغاية ويخاطر بكسر تناسق العلامة التجارية. من وجهة نظر التصميم والتشغيل، خلق هذا عنق زجاجة ضخم.",
+        "theSolution": "قمت بهندسة إطار تصميم منهجي ونظام إنشاء محتوى تركيبي مباشرة داخل فيجما. أنشأنا إطاراً ديناميكياً لبطاقات المحتوى القابلة للتكيف والتي يمكنها التغيير والتوسع فوراً بناءً على أهداف الحملة. تم بناء إطار أتمتة إنشاء البريد الإلكتروني هذا بدقة وفقاً لإرشادات العلامة التجارية لايكيا.",
+        "theImpact": "من خلال ربط أنظمة التصميم الصارمة بأتمتة التسويق، كان المشروع نجاحاً مدوياً على المستويين التشغيلي والتجاري.",
+        "metrics": [
+          { "value": "+230%", "label": "زيادة في إجمالي التحويلات" },
+          { "value": "+430%", "label": "ارتفاع في معدلات النقر على البريد" },
+          { "value": "+40%", "label": "زيادة في معدلات فتح البريد" },
+          { "value": "123 x", "label": "عائد الإنفاق الإعلاني (ROAS)" }
+        ],
+        "layout": [
+          {
+            "_sectionHint": "--- HEADER: COVER IMAGE (Excluded from sticky bands) ---",
+            "type": "full",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-ikea-cover.jpg",
+              "isCover": true
+            }
+          },
+          {
+            "_sectionHint": "--- BUCKET 0: THE ASK ---",
+            "type": "split-8-4",
+            "anchor": "bento-anchor-0",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-ikea-colors.jpg" },
+              { "type": "image", "src": "/images/casestudy-ikea-pricetags.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/portfolio-casestudy-ikea-insight.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 1: THE PROBLEM ---",
+            "type": "full",
+            "anchor": "bento-anchor-1",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-ikea-components.webp",
+              "noBg": true
+            }
+          },
+          {
+            "_sectionHint": "--- BUCKET 2: THE SOLUTION ---",
+            "type": "full",
+            "anchor": "bento-anchor-2",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-ikea-workstation.webp",
+              "noBg": true
+            }
+          },
+          {
+            "_sectionHint": "--- FLOWS INTO BUCKET 2 ---",
+            "type": "split-8-4",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-ikea-banner.jpg" },
+              { "type": "image", "src": "/images/casestudy-ikea-email-a.jpg" }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-ikea-email-b.jpg" }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 3: IMPACT & METRICS ---",
+            "type": "full",
+            "anchor": "bento-anchor-3",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-ikea-impact.webp",
+              "noBg": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "02",
+      "slug": "american-university-of-beirut",
+      "client": "الجامعة الأمريكية في بيروت",
+      "tags": [
+        "استراتيجية تجربة المستخدم",
+        "اختبار المستخدم",
+        "تصميم الخدمات",
+        "تحسين معدل التحويل",
+        "التحول الرقمي",
+        "تكنولوجيا التعليم"
+      ],
+      "image": "/images/casestudy-aub-cover.webp",
+      "expanded": {
+        "agency": "ميماك أوجيلفي وماذر ذ.م.م - دبي",
+        "role": "مدير تصميم تجربة المستخدم",
+        "clientLogo": "/images/logo-client-aub.svg",
+        "about": "تدقيق شامل لتجربة المستخدم وبنية معمارية متطورة لتطبيقات الهاتف المحمول تحكم دورة حياة الطالب بالكامل.",
+        "theAsk": "بدأت الجامعة الأمريكية في بيروت إصلاحاً استراتيجياً لرحلة الطالب الرقمية للمنافسة عالمياً. كانوا بحاجة ماسة إلى تدقيق شامل وبنية محمولة تدير دورة حياة الطالب من الاستكشاف إلى التسجيل.",
+        "theProblem": "كان النظام البيئي القديم مجزأً. كانت عملية التقديم بمثابة \"صندوق أسود\" عبر أنظمة متفرقة، تفتقر إلى مؤشرات تقدم واضحة. أدت قنوات الدعم المحدودة وضعف التجاوب مع الأجهزة المحمولة إلى معدلات تسرب عالية.",
+        "theSolution": "بعد تخطيط رحلة المستخدم، قمت بتصميم تطبيق مركزي يركز على الهاتف المحمول لتقليل العبء المعرفي. يحول التصميم الجديد عملية التقديم إلى تدفق موجه مع حفظ تلقائي ورفع مستندات يمكن التحقق منها. وأخيراً، دمجت مرحلة ما بعد القبول بترحيب فيديو مخصص وبوابة دفع سلسة.",
+        "theImpact": "أدى التصميم الاستراتيجي إلى تحويل الجامعة من شبكة بوابات قديمة إلى تجربة سلسة على الهاتف المحمول، مما قدم نتائج تتجاوز أهداف الأعمال.",
+        "metrics": [
+          { "value": "4 x", "label": "استشارة أسرع" },
+          { "value": "+35%", "label": "معدل التحويل للمشروع" },
+          { "value": "-40%", "label": "حجم تذاكر الدعم" },
+          { "value": "-50%", "label": "الوقت المستغرق للمعاملة" }
+        ],
+        "layout": [
+          {
+            "_sectionHint": "--- HEADER: COVER IMAGE ---",
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-aub-cover.webp", "isCover": true }
+          },
+          {
+            "_sectionHint": "--- BUCKET 0: THE ASK ---",
+            "type": "split-8-4",
+            "anchor": "bento-anchor-0",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-aub-audit-criteria.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-benchmark-list.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-aub-audit-usability.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-audit-loyalty.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-audit-appearance.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-audit-clarity.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-audit-credibility.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 1: THE PROBLEM ---",
+            "type": "split-4-8",
+            "anchor": "bento-anchor-1",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-aub-benchmark-usability-1.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-benchmark-usability.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-aub-benchmark-sbs-radar.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 2: THE SOLUTION ---",
+            "type": "full",
+            "anchor": "bento-anchor-2",
+            "block": { "type": "image", "src": "/images/casestudy-aub-audit-journey.webp", "noBg": true }
+          },
+          {
+            "_sectionHint": "--- BUCKET 3: IMPACT & METRICS ---",
+            "type": "split-4-4-4",
+            "anchor": "bento-anchor-3",
+            "leftCol": [ { "type": "image", "src": "/images/casestudy-aub-prototype-form-eng-a.webp", "noBg": true } ],
+            "midCol": [ { "type": "image", "src": "/images/casestudy-aub-prototype-form-nursing-a.webp", "noBg": true } ],
+            "rightCol": [ { "type": "image", "src": "/images/casestudy-aub-prototype-form-nursing-b.webp", "noBg": true } ]
+          },
+          {
+            "_sectionHint": "--- FLOWS INTO BUCKET 3 ---",
+            "type": "split-4-4-4",
+            "leftCol": [ { "type": "image", "src": "/images/casestudy-aub-prototype-app-admission-a.webp", "noBg": true } ],
+            "midCol": [ { "type": "image", "src": "/images/casestudy-aub-prototype-app-admitted.webp", "noBg": true } ],
+            "rightCol": [ { "type": "image", "src": "/images/casestudy-aub-prototype-admission-b.webp", "noBg": true } ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "03",
+      "slug": "al-futtaim-real-estate",
+      "client": "الفطيم العقارية",
+      "tags": ["التحول الرقمي", "بنية واجهة المستخدم", "أنظمة التصميم"],
+      "image": "/images/casestudy-afre-cover.jpg",
+      "expanded": {
+        "agency": "ميماك أوجيلفي وماذر ذ.م.م - دبي",
+        "role": "مدير تصميم تجربة المستخدم",
+        "clientLogo": "/images/logo-client-alfuttaim.svg",
+        "about": "نظام موحد لإدارة المحتوى (Headless CMS) ونظام تصميم أساسي مركزي على مستوى المؤسسة.",
+        "theAsk": "تدير الفطيم العقارية محفظة ضخمة من العقارات المتنوعة بدءاً من المجتمعات السكنية والمراكز التجارية إلى المراكز التجارية الضخمة (المولات) في منطقة الشرق الأوسط وشمال أفريقيا.",
+        "theProblem": "كان التحدي الأساسي هو أن كل عقار كان يدير موقعاً إلكترونياً مستقلاً وقديماً. أدى هذا التفتت إلى تناقضات حادة في العلامة التجارية، وازدواجية في تكاليف التطوير، ورحلة مستخدم مفككة.",
+        "theSolution": "لحل هذه المشكلة، قدت البنية الاستراتيجية لنظام بيئي موحد (Headless CMS). لم نكتفِ بإعادة تصميم المواقع، بل قمنا بهندسة نظام تصميم مركزي. أتاح هذا الإطار القابل للتطوير للشركة إطلاق مواقع عقارية جديدة في وقت قياسي.",
+        "theImpact": "من خلال فصل طبقة العرض الأمامية (Front-end) عن مستودع المحتوى الخلفي، قمنا بتأمين المحفظة الرقمية بالكامل للمستقبل. تضمن هذه البنية سرعة تحميل فائقة ومرونة مطلقة للتقنيات المستقبلية.",
+        "metrics": [
+          { "value": "50+", "label": "مكوناً مستقلاً تم تصميمه للمكتبة الرئيسية" },
+          { "value": "8+", "label": "مواقع إلكترونية متكاملة تم إطلاقها من نظام واحد" },
+          { "value": "-60%", "label": "انخفاض في وقت الوصول إلى السوق" },
+          { "value": "+40%", "label": "زيادة في تفاعل المستخدمين عبر العقارات" }
+        ],
+        "layout": [
+          {
+            "_sectionHint": "--- HEADER: COVER IMAGE ---",
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-afre-cover.jpg", "isCover": true }
+          },
+          {
+            "_sectionHint": "--- BUCKET 0: THE ASK ---",
+            "type": "split-4-4-4",
+            "anchor": "bento-anchor-0",
+            "leftCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-01.jpg" } ],
+            "midCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-02.jpg" } ],
+            "rightCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-03.jpg" } ]
+          },
+          {
+            "_sectionHint": "--- FLOWS INTO BUCKET 0 ---",
+            "type": "split-4-4-4",
+            "leftCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-04.jpg" } ],
+            "midCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-05.jpg" } ],
+            "rightCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-06.jpg" } ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 1: THE PROBLEM ---",
+            "type": "full",
+            "anchor": "bento-anchor-1",
+            "block": { "type": "image", "src": "/images/casestudy-afre-discovery-analytics.webp", "noBg": true }
+          },
+          {
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-afre-discovery-interviews.webp", "noBg": true }
+          },
+          {
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-afre-discovery-journey.webp", "noBg": true }
+          },
+          {
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-afre-discovery-sitemap.webp", "noBg": true }
+          },
+          {
+            "_sectionHint": "--- BUCKET 2: THE SOLUTION ---",
+            "type": "split-8-4",
+            "anchor": "bento-anchor-2",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-afre-ds-variables.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-afre-ds-components-banner.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-afre-ds-components-card.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-afre-ds-properties-02.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-afre-ds-properties-01.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-afre-ds-properties-03.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 3: IMPACT & METRICS ---",
+            "type": "full",
+            "anchor": "bento-anchor-3",
+            "block": { "type": "image", "src": "/images/casestudy-afre-design-mall.webp", "noBg": true }
+          },
+          {
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-afre-design-dest.webp", "noBg": true }
+          },
+          {
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-afre-design-tech.webp", "noBg": true }
+          }
+        ]
+      }
+    },
+    {
+      "id": "04",
+      "slug": "nestle-professional",
+      "client": "نستله بروفيشنال",
+      "tags": ["تجربة المستخدم", "واجهة المستخدم", "بنية B2B"],
+      "image": "/images/casestudy-nestlepro-cover.jpg",
+      "expanded": {
+        "agency": "ميماك أوجيلفي وماذر ذ.م.م - دبي",
+        "role": "مدير تصميم تجربة المستخدم",
+        "clientLogo": "/images/logo-client-nestlepro.svg",
+        "about": "بنية تجارة إلكترونية معيارية للشركات (B2B) تقدم أنماط بحث فائقة التصفية.",
+        "theAsk": "تنتقل نستله بروفيشنال عالمياً من المبيعات غير المتصلة بالإنترنت إلى بوابة رقمية للخدمة الذاتية. كان التحدي الأساسي هو هيكلة كتالوج منتجات معقد في منصة تجارة إلكترونية بديهية.",
+        "theProblem": "كان المستخدمون يعانون في تصفح الموقع، ويفشلون في تحديد موقع عناصر معينة بسبب كتالوج المنتجات المقيد، ووجدوا قنوات دعم الموقع غير مفيدة للاحتياجات العاجلة.",
+        "theSolution": "قمنا بهندسة بنية معيارية فصلت دورة مبيعات B2B ذات الحجم الكبير عن النظام البيئي العام للعلامة التجارية، وقدمنا نمط بحث فائق التصفية.",
+        "theImpact": "من خلال إعادة هيكلة المنصة حول النماذج العقلية الأساسية بدلاً من الصوامع الداخلية، حولنا واجهة المستخدم من عنق زجاجة عالي الاحتكاك إلى أداة تصفح سلسة، تم التحقق منها من خلال اختبارات صارمة.",
+        "metrics": [
+          { "value": "91%", "label": "متوسط معدل نجاح المهام (ارتفاعاً من 40%)" },
+          { "value": "8.1s", "label": "متوسط الوقت المستغرق للمهمة (انخفاضاً من 15 دقيقة)" },
+          { "value": "+ 259%", "label": "تحسن في سهولة العثور على المنتجات" },
+          { "value": "+ 149%", "label": "تحسن في كفاءة تصفح الكتالوج" }
+        ],
+        "layout": [
+          {
+            "_sectionHint": "--- HEADER: COVER IMAGE ---",
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-nestlepro-cover.jpg", "isCover": true }
+          },
+          {
+            "_sectionHint": "--- BUCKET 0: THE ASK ---",
+            "type": "split-8-4",
+            "anchor": "bento-anchor-0",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-interview.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-nestlepro-auditnav.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-audithomepage.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 1: THE PROBLEM ---",
+            "type": "full",
+            "anchor": "bento-anchor-1",
+            "block": { "type": "image", "src": "/images/casestudy-nestlepro-benchmark.jpg" }
+          },
+          {
+            "_sectionHint": "--- BUCKET 2: THE SOLUTION ---",
+            "type": "full",
+            "anchor": "bento-anchor-2",
+            "block": { "type": "image", "src": "/images/casestudy-nestlepro-sitemap.webp", "noBg": true }
+          },
+          {
+            "_sectionHint": "--- FLOWS INTO BUCKET 2 ---",
+            "type": "split-6-6",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-homepage.jpg" }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-productlisting.jpg" },
+              { "type": "image", "src": "/images/casestudy-nestlepro-productpage.jpg" },
+              { "type": "image", "src": "/images/casestudy-nestlepro-contactus.jpg" }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 3: IMPACT & METRICS ---",
+            "type": "split-6-6",
+            "anchor": "bento-anchor-3",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-test01.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-test02.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- FLOWS INTO BUCKET 3 ---",
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-nestlepro-test03.webp", "noBg": true }
+          }
+        ]
+      }
+    }
+  ],
+  "partnerships": {
+    "title": "موثوق من قِبل قادة الصناعة",
+    "subtitle": "على مدار مسيرتي المهنية، قمت بقيادة التحولات الرقمية وصياغة بنى معمارية موحدة لتجربة المستخدم لشركات عالمية كبرى، ومبتكرين إقليميين، وعلامات تجارية شهيرة.",
+    "logos": [
+      { "src": "logo-client-adcb.svg", "scale": "scale-100" },
+      { "src": "logo-client-aldar.svg", "scale": "scale-75" },
+      { "src": "logo-client-alfuttaim.svg", "scale": "scale-100" },
+      { "src": "logo-client-amex.svg", "scale": "scale-75" },
+      { "src": "logo-client-arabbank.svg", "scale": "scale-100" },
+      { "src": "logo-client-aub.svg", "scale": "scale-100" },
+      { "src": "logo-client-aus.svg", "scale": "scale-75" },
+      { "src": "logo-client-byd.svg", "scale": "scale-100" },
+      { "src": "logo-client-cafeabinasr.svg", "scale": "scale-100" },
+      { "src": "logo-client-cbuae.svg", "scale": "scale-75" },
+      { "src": "logo-client-ddd.svg", "scale": "scale-75" },
+      { "src": "logo-client-dxb.svg", "scale": "scale-75" },
+      { "src": "logo-client-emirates.svg", "scale": "scale-75" },
+      { "src": "logo-client-enbd.svg", "scale": "scale-100" },
+      { "src": "logo-client-etihad.svg", "scale": "scale-100" },
+      { "src": "logo-client-fab.svg", "scale": "scale-75" },
+      { "src": "logo-client-honda.svg", "scale": "scale-75" },
+      { "src": "logo-client-ikea.svg", "scale": "scale-75" },
+      { "src": "logo-client-lexus.svg", "scale": "scale-100" },
+      { "src": "logo-client-marsa.svg", "scale": "scale-100" },
+      { "src": "logo-client-masdarcity.svg", "scale": "scale-75" },
+      { "src": "logo-client-nestlepro.svg", "scale": "scale-100" },
+      { "src": "logo-client-prestigio.svg", "scale": "scale-50" },
+      { "src": "logo-client-saudidates.svg", "scale": "scale-75" },
+      { "src": "logo-client-sidara.svg", "scale": "scale-100" },
+      { "src": "logo-client-soudahdev.svg", "scale": "scale-100" },
+      { "src": "logo-client-soumraniandpartners.svg", "scale": "scale-100" },
+      { "src": "logo-client-space42.svg", "scale": "scale-100" },
+      { "src": "logo-client-taleed.svg", "scale": "scale-100" },
+      { "src": "logo-client-westerncup.svg", "scale": "scale-100" }
+    ]
+  },
+  "contact": {
+    "headline": "لنصنع شيئاً استثنائياً.",
+    "body": "سواء كنت تتطلع إلى إعادة هيكلة نظام تصميم لعدة علامات تجارية، أو دمج الذكاء الاصطناعي في سير عملك، أو قيادة فريق تصميم عالي الأداء، فأنا منفتح دائماً لمناقشة الفرص الاستراتيجية."
+  }
+}

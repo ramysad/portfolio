@@ -1,0 +1,495 @@
+{
+  "nav": {
+    "about": "About Me",
+    "work": "Portfolio",
+    "clients": "Clients",
+    "contact": "Contact",
+    "getInTouch": "Get in touch ↗",
+    "projects": ["Case Study 01", "Case Study 02", "Case Study 03", "Case Study 04"]
+  },
+  "cursor": {
+    "more": "MORE ABOUT THIS",
+    "view": "VIEW PROJECT",
+    "next": "NEXT",
+    "prev": "PREV"
+  },
+  "hero": {
+    "greeting": "Hello",
+    "intro": "It's Ramy, a",
+    "roles": [
+      "Strategic Designer",
+      "Design Systems Architect",
+      "Product Designer",
+      "Creative Technologist",
+      "Business-Minded Problem Solver"
+    ],
+    "labels": {
+      "title": "Experience Architect",
+      "year": "2026"
+    },
+    "stats": {
+      "projects": "Project completed",
+      "experience": "Years of experience"
+    },
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "title": "Architecting digital excellence at scale.",
+    "subtitle": "I am a Strategic Designer and Technologist who builds scalable digital systems for enterprise brands.",
+    "paragraph": "With 15+ years of experience in the MENA market, I specialize in uniting UX architecture with engineering pipelines. By leveraging AI-integrated workflows and code-backed prototyping, I help teams build smarter, ship faster, and drive measurable business growth without compromising on user experience.",
+    "competencies": {
+      "title": "Core Competencies & Services",
+      "subtitle": "Framing execution and leadership through the continuous loop of the Design Thinking process.",
+      "stages": [
+        {
+          "name": "Discover & Empathize",
+          "tags": ["UX/UI Auditing", "Heuristic Evaluation", "Competitive Benchmarking", "User Journey Mapping", "Omnichannel Strategy"]
+        },
+        {
+          "name": "Define & Architect",
+          "tags": ["Enterprise UX Strategy", "Information Architecture (IA)", "Service Design", "Digital Transformation"]
+        },
+        {
+          "name": "Ideate & Prototype",
+          "tags": ["Design Systems", "Atomic Design", "Mobile-First Product Design", "Low-Code Integration"]
+        },
+        {
+          "name": "Test & Scale",
+          "tags": ["Conversion Rate Optimization (CRO)", "Automated Personalization", "AI-Integrated Workflows", "Performance Analytics"]
+        },
+        {
+          "name": "Design Leadership",
+          "tags": ["Cross-Functional Mentorship", "Agile Pipeline Architecture", "Operational Scaling", "Data-Driven Pivoting"]
+        }
+      ]
+    }
+  },
+  "portfolio": [
+    {
+      "id": "01",
+      "slug": "ikea-design-systems",
+      "client": "IKEA",
+      "tags": ["UX Strategy", "Design Systems", "Workflow Automation", "CRO"],
+      "image": "/images/casestudy-ikea-cover.jpg",
+      "expanded": {
+        "agency": "Memac Ogilvy and Mather LLC - Dubai",
+        "role": "Experience Design Director",
+        "clientLogo": "/images/logo-client-ikea.svg",
+        "about": "A scalable, systemized design framework and modular content generation system built directly within Figma.",
+        "theAsk": "Drive higher sales and media efficiency, the business needed to shift from broad, mass-market communication to hyper-personalized, data-driven product recommendations.",
+        "theProblem": "Manually designing dozens of personalized, bespoke emails for various A/B tests and customer segments is incredibly slow and risks breaking strict brand consistency. From a design and operational standpoint, this created a massive bottleneck.",
+        "theSolution": "I engineered a scalable, systemized design framework, a modular content generation system directly within Figma. We created a dynamic framework of adaptable content cards that could instantly shift and scale based on specific campaign objectives and target audiences. This email generation automation framework was built strictly upon IKEA's branding guidelines.",
+        "theImpact": "By bridging rigorous design systems with marketing automation, the project was a resounding success on both an operational and commercial level.",
+        "metrics": [
+          { "value": "+230%", "label": "increase in overall conversions" },
+          { "value": "+430%", "label": "surge in email click rates" },
+          { "value": "+40%", "label": "increase in email open rates" },
+          { "value": "123 x", "label": "Return on Ad Spend (ROAS)" }
+        ],
+        "layout": [
+          {
+            "_sectionHint": "--- HEADER: COVER IMAGE (Excluded from sticky bands) ---",
+            "type": "full",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-ikea-cover.jpg",
+              "isCover": true
+            }
+          },
+          {
+            "_sectionHint": "--- BUCKET 0: THE ASK ---",
+            "type": "split-8-4",
+            "anchor": "bento-anchor-0",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-ikea-colors.jpg" },
+              { "type": "image", "src": "/images/casestudy-ikea-pricetags.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/portfolio-casestudy-ikea-insight.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 1: THE PROBLEM ---",
+            "type": "full",
+            "anchor": "bento-anchor-1",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-ikea-components.webp",
+              "noBg": true
+            }
+          },
+          {
+            "_sectionHint": "--- BUCKET 2: THE SOLUTION ---",
+            "type": "full",
+            "anchor": "bento-anchor-2",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-ikea-workstation.webp",
+              "noBg": true
+            }
+          },
+          {
+            "_sectionHint": "--- FLOWS INTO BUCKET 2 ---",
+            "type": "split-8-4",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-ikea-banner.jpg" },
+              { "type": "image", "src": "/images/casestudy-ikea-email-a.jpg" }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-ikea-email-b.jpg" }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 3: IMPACT & METRICS ---",
+            "type": "full",
+            "anchor": "bento-anchor-3",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-ikea-impact.webp",
+              "noBg": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "02",
+      "slug": "american-university-of-beirut",
+      "client": "American University of Beirut",
+      "tags": [
+        "UX Strategy",
+        "User Testing",
+        "Service Design",
+        "CRO",
+        "Digital Transformation",
+        "EdTech"
+      ],
+      "image": "/images/casestudy-aub-cover.webp",
+      "expanded": {
+        "agency": "Memac Ogilvy and Mather LLC - Dubai",
+        "role": "Experience Design Director",
+        "clientLogo": "/images/logo-client-aub.svg",
+        "about": "A comprehensive UX audit and a transformative mobile architecture governing the entire student lifecycle.",
+        "theAsk": "AUB initiated a strategic overhaul of its digital student journey to compete globally. They urgently needed to orchestrate a comprehensive UX audit and a transformative mobile architecture governing the entire student lifecycle - from discovery to enrollment.",
+        "theProblem": "AUB's legacy ecosystem was fragmented and high-friction. The application process was a \"black-box\" across dispersed systems, lacking clear progress indicators or proactive guidance. Limited support channels and poor mobile responsiveness directly caused high drop-off rates and overwhelming IT support calls.",
+        "theSolution": "After mapping the user journey via a comprehensive Service Blueprint, I architected a centralized, mobile-first app to completely minimize cognitive overhead. The redesign transforms the application into a guided, auto-saving flow featuring clear step-estimates and verifiable document drops. Finally, I solidified the post-admission transition with personalized video welcomes and a frictionless payment gateway.",
+        "theImpact": "The strategic redesign shifted AUB from a clunky web of legacy portals to a sleek, mobile experience, delivering beyond business outcomes.",
+        "metrics": [
+          { "value": "4 x", "label": "Faster Consultation" },
+          { "value": "+35%", "label": "Project Conversion" },
+          { "value": "-40%", "label": "Support Volume" },
+          { "value": "-50%", "label": "Time to Transaction" }
+        ],
+        "layout": [
+          {
+            "_sectionHint": "--- HEADER: COVER IMAGE ---",
+            "type": "full",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-aub-cover.webp",
+              "isCover": true
+            }
+          },
+          {
+            "_sectionHint": "--- BUCKET 0: THE ASK ---",
+            "type": "split-8-4",
+            "anchor": "bento-anchor-0",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-aub-audit-criteria.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-benchmark-list.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-aub-audit-usability.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-audit-loyalty.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-audit-appearance.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-audit-clarity.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-audit-credibility.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 1: THE PROBLEM ---",
+            "type": "split-4-8",
+            "anchor": "bento-anchor-1",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-aub-benchmark-usability-1.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-aub-benchmark-usability.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-aub-benchmark-sbs-radar.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 2: THE SOLUTION ---",
+            "type": "full",
+            "anchor": "bento-anchor-2",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-aub-audit-journey.webp",
+              "noBg": true
+            }
+          },
+          {
+            "_sectionHint": "--- BUCKET 3: IMPACT & METRICS ---",
+            "type": "split-4-4-4",
+            "anchor": "bento-anchor-3",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-aub-prototype-form-eng-a.webp", "noBg": true }
+            ],
+            "midCol": [
+              { "type": "image", "src": "/images/casestudy-aub-prototype-form-nursing-a.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-aub-prototype-form-nursing-b.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- FLOWS INTO BUCKET 3 ---",
+            "type": "split-4-4-4",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-aub-prototype-app-admission-a.webp", "noBg": true }
+            ],
+            "midCol": [
+              { "type": "image", "src": "/images/casestudy-aub-prototype-app-admitted.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-aub-prototype-admission-b.webp", "noBg": true }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "03",
+      "slug": "al-futtaim-real-estate",
+      "client": "Al-Futtaim Real Estate",
+      "tags": ["Digital Transformation", "UI Architecture", "Design Systems"],
+      "image": "/images/casestudy-afre-cover.jpg",
+      "expanded": {
+        "agency": "Memac Ogilvy and Mather LLC - Dubai",
+        "role": "Experience Design Director",
+        "clientLogo": "/images/logo-client-alfuttaim.svg",
+        "about": "A unified, enterprise-grade Headless CMS ecosystem and centralized foundational design system.",
+        "theAsk": "Al-Futtaim Real Estate operates a massive portfolio of diverse properties ranging from residential communities and commercial hubs to mega-malls across the MENA region.",
+        "theProblem": "The core challenge was that each property operated its own disconnected, legacy website. This fragmentation created severe brand inconsistencies, duplicated development costs, and a disjointed user journey for customers interacting with multiple Al-Futtaim entities.",
+        "theSolution": "To solve this, I led the strategic architecture of a unified, enterprise-grade Headless CMS ecosystem. We didn't just redesign websites; we engineered a centralized foundational design system. This scalable framework allowed the business to deploy new, fully branded property websites in a fraction of the time, while a single centralized CMS empowered the marketing teams to update content globally across all digital touchpoints instantly.",
+        "theImpact": "By decoupling the front-end presentation layer from the back-end content repository, we future-proofed the entire digital portfolio. The Headless architecture ensures lightning-fast page loads, superior SEO performance, and the flexibility to seamlessly integrate future technologies like AI-driven personalization and omnichannel touchpoints.",
+        "metrics": [
+          { "value": "50+", "label": "Distinct components designed and built for the master library" },
+          { "value": "8+", "label": "Integrated websites launched for different property brands from a single system" },
+          { "value": "-60%", "label": "Reduction in time-to-market for launching new property portals" },
+          { "value": "+40%", "label": "Increase in cross-property user engagement and lead generation" }
+        ],
+        "layout": [
+          {
+            "_sectionHint": "--- HEADER: COVER IMAGE ---",
+            "type": "full",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-afre-cover.jpg",
+              "isCover": true
+            }
+          },
+          {
+            "_sectionHint": "--- BUCKET 0: THE ASK ---",
+            "type": "split-4-4-4",
+            "anchor": "bento-anchor-0",
+            "leftCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-01.jpg" } ],
+            "midCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-02.jpg" } ],
+            "rightCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-03.jpg" } ]
+          },
+          {
+            "_sectionHint": "--- FLOWS INTO BUCKET 0 ---",
+            "type": "split-4-4-4",
+            "leftCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-04.jpg" } ],
+            "midCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-05.jpg" } ],
+            "rightCol": [ { "type": "image", "src": "/images/casestudy-afre-ask-06.jpg" } ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 1: THE PROBLEM ---",
+            "type": "full",
+            "anchor": "bento-anchor-1",
+            "block": { "type": "image", "src": "/images/casestudy-afre-discovery-analytics.webp", "noBg": true }
+          },
+          {
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-afre-discovery-interviews.webp", "noBg": true }
+          },
+          {
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-afre-discovery-journey.webp", "noBg": true }
+          },
+          {
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-afre-discovery-sitemap.webp", "noBg": true }
+          },
+          {
+            "_sectionHint": "--- BUCKET 2: THE SOLUTION ---",
+            "type": "split-8-4",
+            "anchor": "bento-anchor-2",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-afre-ds-variables.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-afre-ds-components-banner.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-afre-ds-components-card.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-afre-ds-properties-02.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-afre-ds-properties-01.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-afre-ds-properties-03.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 3: IMPACT & METRICS ---",
+            "type": "full",
+            "anchor": "bento-anchor-3",
+            "block": { "type": "image", "src": "/images/casestudy-afre-design-mall.webp", "noBg": true }
+          },
+          {
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-afre-design-dest.webp", "noBg": true }
+          },
+          {
+            "type": "full",
+            "block": { "type": "image", "src": "/images/casestudy-afre-design-tech.webp", "noBg": true }
+          }
+        ]
+      }
+    },
+    {
+      "id": "04",
+      "slug": "nestle-professional",
+      "client": "Nestlé Professional",
+      "tags": ["UX", "UI", "B2B Architecture"],
+      "image": "/images/casestudy-nestlepro-cover.jpg",
+      "expanded": {
+        "agency": "Memac Ogilvy and Mather LLC - Dubai",
+        "role": "Experience Design Director",
+        "clientLogo": "/images/logo-client-nestlepro.svg",
+        "about": "A headless, modular B2B e-commerce architecture introducing hyper-filtered search patterns.",
+        "theAsk": "Nestlé Professional globally is transitioning from offline sales to a self-serve digital portal. The core challenge was architecting a complex product catalog into an intuitive B2B e-commerce platform.",
+        "theProblem": "Users were actively struggling with site navigation, failing to locate specific items due to a restrictive product catalogue, and finding the website's support channels unhelpful for urgent needs.",
+        "theSolution": "We engineered a headless, modular architecture that separated the high-volume B2B sales cycle from the general brand ecosystem, introducing a hyper-filtered search pattern.",
+        "theImpact": "By restructuring the platform around core mental models rather than internal silos, we transformed the UI from a high-friction bottleneck into a seamless navigation tool, validated through rigorous Tree Testing.",
+        "metrics": [
+          { "value": "91%", "label": "Average Task Success Rate (up from 40%)" },
+          { "value": "8.1s", "label": "Average Time on Task (down from 15m)" },
+          { "value": "+ 259%", "label": "Improvement in findability for core personas" },
+          { "value": "+ 149%", "label": "Improvement in efficiency for catalog browsing" }
+        ],
+        "layout": [
+          {
+            "_sectionHint": "--- HEADER: COVER IMAGE ---",
+            "type": "full",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-nestlepro-cover.jpg",
+              "isCover": true
+            }
+          },
+          {
+            "_sectionHint": "--- BUCKET 0: THE ASK ---",
+            "type": "split-8-4",
+            "anchor": "bento-anchor-0",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-interview.webp", "noBg": true },
+              { "type": "image", "src": "/images/casestudy-nestlepro-auditnav.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-audithomepage.webp", "no,Bg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 1: THE PROBLEM ---",
+            "type": "full",
+            "anchor": "bento-anchor-1",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-nestlepro-benchmark.jpg"
+            }
+          },
+          {
+            "_sectionHint": "--- BUCKET 2: THE SOLUTION ---",
+            "type": "full",
+            "anchor": "bento-anchor-2",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-nestlepro-sitemap.webp",
+              "noBg": true
+            }
+          },
+          {
+            "_sectionHint": "--- FLOWS INTO BUCKET 2 ---",
+            "type": "split-6-6",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-homepage.jpg" }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-productlisting.jpg" },
+              { "type": "image", "src": "/images/casestudy-nestlepro-productpage.jpg" },
+              { "type": "image", "src": "/images/casestudy-nestlepro-contactus.jpg" }
+            ]
+          },
+          {
+            "_sectionHint": "--- BUCKET 3: IMPACT & METRICS ---",
+            "type": "split-6-6",
+            "anchor": "bento-anchor-3",
+            "leftCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-test01.webp", "noBg": true }
+            ],
+            "rightCol": [
+              { "type": "image", "src": "/images/casestudy-nestlepro-test02.webp", "noBg": true }
+            ]
+          },
+          {
+            "_sectionHint": "--- FLOWS INTO BUCKET 3 ---",
+            "type": "full",
+            "block": {
+              "type": "image",
+              "src": "/images/casestudy-nestlepro-test03.webp",
+              "noBg": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "partnerships": {
+    "title": "Trusted by industry leaders",
+    "subtitle": "Over the course of my career, I've spearheaded digital overhauls and crafted unified UX architectures for global powerhouses, regional innovators, and household names.",
+    "logos": [
+      { "src": "logo-client-adcb.svg", "scale": "scale-100" },
+      { "src": "logo-client-aldar.svg", "scale": "scale-75" },
+      { "src": "logo-client-alfuttaim.svg", "scale": "scale-100" },
+      { "src": "logo-client-amex.svg", "scale": "scale-75" },
+      { "src": "logo-client-arabbank.svg", "scale": "scale-100" },
+      { "src": "logo-client-aub.svg", "scale": "scale-100" },
+      { "src": "logo-client-aus.svg", "scale": "scale-75" },
+      { "src": "logo-client-byd.svg", "scale": "scale-100" },
+      { "src": "logo-client-cafeabinasr.svg", "scale": "scale-100" },
+      { "src": "logo-client-cbuae.svg", "scale": "scale-120" },
+      { "src": "logo-client-ddd.svg", "scale": "scale-75" },
+      { "src": "logo-client-dxb.svg", "scale": "scale-75" },
+      { "src": "logo-client-emirates.svg", "scale": "scale-75" },
+      { "src": "logo-client-enbd.svg", "scale": "scale-100" },
+      { "src": "logo-client-etihad.svg", "scale": "scale-100" },
+      { "src": "logo-client-fab.svg", "scale": "scale-75" },
+      { "src": "logo-client-honda.svg", "scale": "scale-75" },
+      { "src": "logo-client-ikea.svg", "scale": "scale-75" },
+      { "src": "logo-client-lexus.svg", "scale": "scale-100" },
+      { "src": "logo-client-marsa.svg", "scale": "scale-100" },
+      { "src": "logo-client-masdarcity.svg", "scale": "scale-75" },
+      { "src": "logo-client-nestlepro.svg", "scale": "scale-100" },
+      { "src": "logo-client-prestigio.svg", "scale": "scale-120" },
+      { "src": "logo-client-saudidates.svg", "scale": "scale-75" },
+      { "src": "logo-client-sidara.svg", "scale": "scale-100" },
+      { "src": "logo-client-soudahdev.svg", "scale": "scale-100" },
+      { "src": "logo-client-soumraniandpartners.svg", "scale": "scale-120" },
+      { "src": "logo-client-space42.svg", "scale": "scale-100" },
+      { "src": "logo-client-taleed.svg", "scale": "scale-100" },
+      { "src": "logo-client-westerncup.svg", "scale": "scale-100" }
+    ]
+  },
+  "contact": {
+    "headline": "Let's build something exceptional.",
+    "body": "Whether you are looking to overhaul a multi-brand design system, integrate AI into your workflow, or lead a high-performing design team, I am always open to discussing strategic opportunities."
+  }
+}
