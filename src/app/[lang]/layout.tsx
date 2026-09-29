@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { getDictionary } from "@/dictionaries/dictionary";
 import "../globals.css";
 import CustomCursor from "@/components/CustomCursor";
+// 1. Import the Analytics component
+import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -61,6 +63,8 @@ export default async function RootLayout({
             <main className="flex-1">{children}</main>
           </div>
         </ThemeProvider>
+        {/* 2. Inject Vercel Analytics */}
+        <Analytics />
       </body>
     </html>
   );
