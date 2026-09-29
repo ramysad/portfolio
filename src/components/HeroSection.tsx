@@ -100,7 +100,6 @@ export default function HeroSection({ dict }: HeroProps) {
         </div>
 
         {/* CENTER COLUMN: Text Block */}
-        {/* THE FIX: Added padding (md:ltr:pl-16 lg:ltr:pl-24 and RTL equivalents) to create beautiful negative space from the timeline. */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -158,7 +157,6 @@ export default function HeroSection({ dict }: HeroProps) {
             </div>
           </motion.div>
 
-          {/* THE FIX: Re-anchored to the absolute bottom of the parent container, and synchronized the left/right offsets to match the container's padding. */}
           <motion.div
             variants={itemVariants}
             className="absolute bottom-12 ltr:left-16 lg:ltr:left-24 rtl:right-16 lg:rtl:right-24 hidden md:flex items-center gap-2 pointer-events-auto"
@@ -175,9 +173,6 @@ export default function HeroSection({ dict }: HeroProps) {
         {/* Image Block */}
         <div className="absolute bottom-0 ltr:left-0 rtl:right-0 w-full h-[75%] md:w-[75%] md:h-[90%] md:ltr:left-auto md:rtl:right-auto md:ltr:-right-10 md:rtl:-left-10 z-10 pointer-events-none">
           
-          {/* THE FIX: Removed the global "opacity-20" class. 
-              We now rely strictly on the color alpha channels (bg-neutral-400/30 and bg-white/10) 
-              so the math doesn't multiply into invisibility. */}
           <motion.div
             style={{ x: xOffset, y: yOffset }}
             className="absolute top-[40%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] rounded-full bg-neutral-400/50 dark:bg-white/10 blur-[100px] -z-10 transition-colors duration-300"
@@ -192,7 +187,8 @@ export default function HeroSection({ dict }: HeroProps) {
               stiffness: 50,
               delay: 0.4,
             }}
-            className="w-full h-full relative"
+            // THE FIX: Added pt-16 md:pt-0 here to permanently shift the image down on mobile, clearing the text paragraph
+            className="w-full h-full relative pt-16 md:pt-0"
           >
             <Image
               src="/images/hero_image_light.webp"

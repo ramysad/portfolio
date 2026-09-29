@@ -126,9 +126,11 @@ export default function WorkSection({ dict, lang }: WorkProps) {
       id="work"
       ref={targetRef}
       className="relative w-full bg-surface-primary"
-      style={{ height: `${dict.length * 100}vh` }}
+      // THE FIX 1: Upgraded inline height from vh to dvh
+      style={{ height: `${dict.length * 100}dvh` }}
     >
-      <div className="sticky top-0 h-[100svh] w-full z-20 pointer-events-none flex items-center overflow-hidden">
+      {/* THE FIX 2: Upgraded sticky container from 100svh to 100dvh */}
+      <div className="sticky top-0 h-[100dvh] w-full z-20 pointer-events-none flex items-center overflow-hidden">
         {/* Layer 2.1: Background Blur */}
         <div className="absolute inset-y-0 ltr:left-0 rtl:right-0 w-full md:w-[70%] lg:w-[50%] bg-surface-primary/80 backdrop-blur-xl transition-colors duration-300 [mask-image:linear-gradient(to_right,black_0%,black_25%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_right,black_0%,black_25%,transparent_100%)] rtl:[mask-image:linear-gradient(to_left,black_0%,black_25%,transparent_100%)] rtl:[-webkit-mask-image:linear-gradient(to_left,black_0%,black_25%,transparent_100%)]" />
 
@@ -136,7 +138,6 @@ export default function WorkSection({ dict, lang }: WorkProps) {
         <AnimatePresence>
           {isTransitioning && (
             <motion.div
-              // Boosted to z-40 and uses semantic background color
               className="absolute inset-0 z-40 bg-surface-primary pointer-events-none"
               initial={{ x: lang === "ar" ? "100%" : "-100%" }}
               animate={{ x: "0%" }}
@@ -167,7 +168,7 @@ export default function WorkSection({ dict, lang }: WorkProps) {
 
       {/* Layer 1: Standard Document Flow Images */}
       <div
-        className="relative z-10 w-full flex flex-col -mt-[100svh]"
+        className="relative z-10 w-full flex flex-col -mt-[100dvh]"
         data-cursor-zone="work"
         data-active-index={activeIndex}
         data-total={dict.length}
@@ -176,8 +177,17 @@ export default function WorkSection({ dict, lang }: WorkProps) {
         {dict.map((project, index) => (
           <div
             key={project.id}
-            className="h-[100svh] w-full relative overflow-hidden snap-start snap-always shrink-0"
+            // THE FIX: Injected the dynamic ID so the nav anchor has a physical target
+            id={`project-${index + 1}`} 
+            className="h-[100dvh] w-full relative overflow-hidden snap-start snap-always shrink-0"
           >
+            <div 
+              className="md:hidden absolute inset-0 z-50 w-full h-full cursor-pointer"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleProjectClick(project.slug);
+              }}
+            />
             <Image
               src={project.image}
               alt={project.client}

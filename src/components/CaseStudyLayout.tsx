@@ -141,7 +141,8 @@ export default function CaseStudyLayout({
           </div>
         </div>
 
-        <div id="case-study-content" className="grid grid-cols-1 lg:grid-cols-12 relative w-full gap-x-8 lg:gap-x-12 pb-32">
+        {/* THE FIX: Replaced pb-32 with pb-12 lg:pb-32 to collapse whitespace before the Next Project footer */}
+        <div id="case-study-content" className="grid grid-cols-1 lg:grid-cols-12 relative w-full gap-x-8 lg:gap-x-12 pb-12 lg:pb-32">
           {sections.map((section, sIndex) => {
             if (!section.content && section.rows.length === 0) return null;
             
@@ -151,7 +152,6 @@ export default function CaseStudyLayout({
             return (
               <React.Fragment key={sIndex}>
                 
-                {/* THE FIX: Replaced inline style with Tailwind lg:[grid-row:var(--row-span)] */}
                 <button 
                   onClick={() => scrollToSection(sIndex)}
                   className={`hidden lg:block lg:col-start-1 lg:col-span-4 sticky z-50 w-full h-fit bg-surface-primary transition-all duration-300 cursor-pointer group lg:[grid-row:var(--row-span)] ${topOffset}`}
@@ -165,7 +165,6 @@ export default function CaseStudyLayout({
                   </div>
                 </button>
 
-                {/* THE FIX: Added lg:[grid-row:var(--row-num)]. On mobile, it defaults to standard flow! */}
                 <aside 
                   id={`section-${sIndex}`}
                   className="lg:col-start-1 lg:col-span-4 relative h-full z-10 pb-16 lg:pb-32 border-t lg:border-t-0 border-border-subtle/50 lg:[grid-row:var(--row-num)]"
@@ -194,9 +193,9 @@ export default function CaseStudyLayout({
                   </div>
                 </aside>
 
-                {/* THE FIX: Added lg:[grid-row:var(--row-num)] */}
+                {/* THE FIX: Replaced pb-16 lg:pb-32 with pb-12 lg:pb-32 here as well to keep mobile flow tight */}
                 <div 
-                  className="lg:col-start-5 lg:col-span-8 flex flex-col gap-8 lg:gap-16 pt-6 lg:pt-[72px] pb-16 lg:pb-32 border-t border-border-subtle/50 lg:[grid-row:var(--row-num)]"
+                  className="lg:col-start-5 lg:col-span-8 flex flex-col gap-8 lg:gap-16 pt-6 lg:pt-[72px] pb-12 lg:pb-32 border-t border-border-subtle/50 lg:[grid-row:var(--row-num)]"
                   style={{ '--row-num': rowNum } as React.CSSProperties}
                 >
                   {section.rows.map((row, rowIndex) => (

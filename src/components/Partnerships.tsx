@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 
-// THE FIX: Updated the interface to match our new JSON objects
 export interface PartnershipsDict {
   title: string;
   subtitle: string;
@@ -24,17 +23,18 @@ export default function Partnerships({ dict }: { dict: PartnershipsDict }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 lg:gap-x-16 gap-y-12 lg:gap-y-16 items-center justify-items-center -ml-4 rtl:-mr-4">
+        {/* THE FIX: Added px-8 md:px-0 to create a safe zone on mobile devices */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 lg:gap-x-16 gap-y-12 lg:gap-y-16 items-center justify-items-center px-8 md:px-0 -ml-4 rtl:-mr-4">
           {dict.logos.map((logo: { src: string; scale: string }, index: number) => (
             <div 
               key={index} 
-              // THE FIX: Injected the optical equalizer (logo.scale) directly into the wrapper!
               className={`w-full h-16 lg:h-24 max-w-[120px] lg:max-w-[180px] relative grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500 ease-out cursor-default ${logo.scale}`}
             >
               <Image
                 src={`/images/${logo.src}`}
                 alt="Client Partnership Logo"
                 fill
+                quality={100} // THE FIX: Forces max sharpness for logos
                 className="object-contain invert dark:invert-0"
                 sizes="(max-width: 768px) 50vw, 25vw"
               />

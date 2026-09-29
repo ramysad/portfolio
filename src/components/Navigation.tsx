@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { Moon, Sun, Globe, CaretDown, List, X } from "@phosphor-icons/react";
+import { Moon, Sun, Globe, CaretDown, List, X, ArrowUpRight } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 import {
   motion,
@@ -55,9 +55,6 @@ export default function Navigation({ lang, dict }: NavigationProps) {
     >
       <div className="mx-auto flex h-16 w-full px-6 md:px-12 lg:px-24 items-center justify-between">
         
-        {/* THE FIX: Added an onClick intercept to the Logo. 
-            If the user is already on the homepage, prevent the default router jump 
-            and trigger a smooth scroll to the absolute top of the window instead. */}
         <Link 
           href={`/${lang}`} 
           onClick={(e) => {
@@ -162,22 +159,30 @@ export default function Navigation({ lang, dict }: NavigationProps) {
 
           <a
             href="#contact"
-            className="px-5 py-2 border border-content-primary text-small text-content-primary hover:bg-content-primary hover:text-surface-primary transition-colors"
+            className="group flex items-center gap-2 px-5 py-2 border border-content-primary text-small text-content-primary hover:bg-content-primary hover:text-surface-primary transition-colors"
           >
-            {dict.getInTouch}
+            <span>{dict.getInTouch}</span>
+            <ArrowUpRight 
+              size={14} 
+              weight="bold" 
+              className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" 
+            />
           </a>
         </div>
 
         {/* Mobile Right Controls: CTA + Burger */}
         <div className="md:hidden flex items-center gap-4 z-50">
-          
-          {/* THE FIX: Upgraded mobile button padding (px-5 py-2.5) and font size (text-small font-medium) to hit mobile accessibility touch-target standards */}
           <a
             href="#contact"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="px-5 py-2.5 border border-content-primary text-small font-medium text-content-primary hover:bg-content-primary hover:text-surface-primary transition-colors whitespace-nowrap"
+            className="group flex items-center gap-1.5 px-5 py-2.5 border border-content-primary text-small font-medium text-content-primary hover:bg-content-primary hover:text-surface-primary transition-colors whitespace-nowrap"
           >
-            {dict.getInTouch}
+            <span>{dict.getInTouch}</span>
+            <ArrowUpRight 
+              size={14} 
+              weight="bold" 
+              className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" 
+            />
           </a>
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -200,7 +205,7 @@ export default function Navigation({ lang, dict }: NavigationProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-10%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="md:hidden fixed inset-0 z-40 bg-surface-primary flex flex-col px-6 pt-24 pb-12 h-[100svh] overflow-y-auto"
+            className="md:hidden fixed inset-0 z-40 bg-surface-primary flex flex-col px-6 pt-24 pb-12 h-[100dvh] overflow-y-auto"
           >
             <nav className="flex flex-col gap-8 flex-1">
               <a
@@ -233,14 +238,14 @@ export default function Navigation({ lang, dict }: NavigationProps) {
                       className="flex flex-col gap-4 pl-6 border-l-2 border-border-strong overflow-hidden ml-2 mt-2"
                     >
                       {dict.projects.map((project, index) => (
-                        <a
+                        <Link
                           key={index}
-                          href={`#project-${index + 1}`}
+                          href={`/${lang}#project-${index + 1}`}
                           onClick={() => setIsMobileMenuOpen(false)}
-                          className="text-small text-content-secondary hover:text-content-primary pt-2"
+                          className="text-small text-content-secondary hover:text-content-primary pt-2 block"
                         >
                           {project}
-                        </a>
+                        </Link>
                       ))}
                     </motion.div>
                   )}
@@ -256,27 +261,28 @@ export default function Navigation({ lang, dict }: NavigationProps) {
               </a>
             </nav>
 
+            {/* THE FIX: Restored the missing parent flex container here */}
             {/* Bottom Controls */}
             <div className="mt-auto pt-8 border-t border-border-subtle flex justify-between items-center">
               <div className="flex gap-6">
                 <Link
                   href="/en"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-h6 ${lang === "en" ? "text-content-primary underline" : "text-content-secondary"}`}
+                  className={`text-h6 transition-all ${lang === "en" ? "text-content-primary underline underline-offset-[8px] decoration-1" : "text-content-secondary hover:text-content-primary"}`}
                 >
                   EN
                 </Link>
                 <Link
                   href="/ar"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-h6 ${lang === "ar" ? "text-content-primary underline" : "text-content-secondary"}`}
+                  className={`text-h6 transition-all ${lang === "ar" ? "text-content-primary underline underline-offset-[8px] decoration-1" : "text-content-secondary hover:text-content-primary"}`}
                 >
                   AR
                 </Link>
                 <Link
                   href="/fr"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-h6 ${lang === "fr" ? "text-content-primary underline" : "text-content-secondary"}`}
+                  className={`text-h6 transition-all ${lang === "fr" ? "text-content-primary underline underline-offset-[8px] decoration-1" : "text-content-secondary hover:text-content-primary"}`}
                 >
                   FR
                 </Link>
