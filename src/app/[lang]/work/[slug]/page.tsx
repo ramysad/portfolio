@@ -4,8 +4,8 @@ import { getDictionary } from "@/dictionaries/dictionary";
 import ProjectSubNav from "@/components/ProjectSubNav";
 import PasswordGate from "@/components/PasswordGate";
 import ScrollToTop from "@/components/ScrollToTop";
-
 import CaseStudyLayout, { ProjectData } from "@/components/CaseStudyLayout";
+import { getPasswordForProject } from "@/config/security"; 
 
 export default async function ProjectDetail({
   params,
@@ -14,31 +14,26 @@ export default async function ProjectDetail({
 }) {
   const { lang, slug } = await params;
 
-  // 1. Fetch data
   const dict = await getDictionary(lang as "en" | "ar" | "fr");
   const portfolio = dict.portfolio as unknown as ProjectData[];
   const project = portfolio.find((p) => p.slug === slug);
 
-  // 2. Validate project exists
   if (!project || !project.expanded) {
     return notFound();
   }
 
-  // 3. Security Check
   const cookieStore = await cookies();
-  const currentCookieValue = cookieStore.get(`unlocked_${slug}`)?.value;
+  const accessTokens = cookieStore.get("portfolio_access")?.value || "";
 
-  // Hardened check to support both JSON booleans and stringified booleans
   const isProtected = String(project.protected) === "true";
+  const securePassword = getPasswordForProject(slug);
 
-  const expectedToken =
-    isProtected && project.password
-      ? Buffer.from(`${slug}-${project.password}-portfolio-secret`).toString("base64")
-      : null;
+  const expectedToken = securePassword
+    ? Buffer.from(`${securePassword}-portfolio-secret`).toString("base64")
+    : "";
 
-  const isUnlocked = currentCookieValue === expectedToken;
+  const isUnlocked = isProtected && accessTokens.includes(expectedToken);
 
-  // 4. The Locked State
   if (isProtected && !isUnlocked) {
     return (
       <main className="min-h-screen bg-surface-primary flex flex-col w-full -mt-8 md:-mt-12 relative z-40">
@@ -51,7 +46,6 @@ export default async function ProjectDetail({
     );
   }
 
-  // 5. The Unlocked State (Endless Loop Engine)
   const currentIndex = portfolio.findIndex((p) => p.slug === slug);
   const nextProject =
     currentIndex >= 0 && currentIndex < portfolio.length - 1
