@@ -36,8 +36,9 @@ export default function ContactSection({ dict }: ContactProps) {
             </div>
 
             <div className="flex flex-col justify-center gap-6 pt-2">
+              {/* THE FIX: Updated href and span text to the new custom domain email */}
               <a
-                href="mailto:ramysad@gmail.com"
+                href="mailto:hello@ramysader.com"
                 className="flex items-center gap-4 group w-fit"
               >
                 <Envelope
@@ -45,7 +46,7 @@ export default function ContactSection({ dict }: ContactProps) {
                   className="w-8 h-8 text-content-secondary group-hover:text-content-primary transition-colors"
                 />
                 <span className="text-body font-medium text-content-secondary group-hover:text-content-primary transition-colors">
-                  ramysad@gmail.com
+                  hello@ramysader.com
                 </span>
               </a>
 

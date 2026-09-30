@@ -11,10 +11,10 @@ import {
 } from "framer-motion";
 import { MouseEvent, useEffect, useState } from "react";
 
+// THE FIX 1: Removed opacity from the parent to prevent it from creating a Stacking Context
 const containerVariants: Variants = {
-  hidden: { opacity: 0 },
+  hidden: {}, 
   show: {
-    opacity: 1,
     transition: { staggerChildren: 0.15, delayChildren: 0.2 },
   },
 };
@@ -104,18 +104,20 @@ export default function HeroSection({ dict }: HeroProps) {
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="absolute top-0 ltr:left-0 rtl:right-0 w-full h-[25%] px-6 pt-16 md:pt-24 flex flex-col justify-start z-20 md:relative md:flex-1 md:h-full md:w-auto md:px-0 md:pt-0 md:justify-center md:-mt-12 md:ltr:pl-16 lg:ltr:pl-24 md:rtl:pr-16 lg:rtl:pr-24 pointer-events-none"
+          /* THE FIX 2: Removed z-20 and mix-blend-difference from the parent orchestrator */
+          className="absolute top-0 ltr:left-0 rtl:right-0 w-full h-[25%] px-6 pt-16 md:pt-24 flex flex-col justify-start md:relative md:flex-1 md:h-full md:w-auto md:px-0 md:pt-0 md:justify-center md:-mt-12 md:ltr:pl-16 lg:ltr:pl-24 md:rtl:pr-16 lg:rtl:pr-24 pointer-events-none"
         >
+          {/* THE FIX 3: Applied z-20 and mix-blend-difference directly to the items */}
           <motion.h1
             variants={itemVariants}
-            className="text-[8rem] rtl:text-[6.5rem] md:text-[10rem] lg:text-[12rem] ltr:leading-[0.85] rtl:leading-[1.2] md:ltr:leading-none md:rtl:leading-[1.1] font-sans font-light tracking-tighter text-content-primary -mx-1 md:-mx-2"
+            className="relative z-20 mix-blend-difference text-[8rem] rtl:text-[6.5rem] md:text-[10rem] lg:text-[12rem] ltr:leading-[0.85] rtl:leading-[1.2] md:ltr:leading-none md:rtl:leading-[1.1] font-sans font-light tracking-tighter text-white -mx-1 md:-mx-2"
           >
             {dict.greeting}
           </motion.h1>
 
           <motion.p
             variants={itemVariants}
-            className="text-small md:text-h6 text-content-secondary mt-2 md:mt-4 flex flex-wrap items-center gap-2"
+            className="relative z-20 mix-blend-difference text-small md:text-h6 text-white/80 mt-2 md:mt-4 flex flex-wrap items-center gap-2"
           >
             &mdash; {dict.intro}
             <span className="relative inline-grid whitespace-nowrap">
@@ -127,7 +129,7 @@ export default function HeroSection({ dict }: HeroProps) {
                   exit={{ opacity: 0, y: -20, rotateX: 90 }}
                   transition={{ duration: 0.6, type: "spring", bounce: 0.2 }}
                   style={{ transformOrigin: "50% 50%" }}
-                  className="col-start-1 row-start-1 font-medium text-content-primary"
+                  className="col-start-1 row-start-1 font-medium text-white"
                 >
                   {dict.roles[roleIndex]}
                 </motion.span>
@@ -135,9 +137,10 @@ export default function HeroSection({ dict }: HeroProps) {
             </span>
           </motion.p>
 
+          {/* THE FIX 4: Reverted Stats to normal rendering (no blend mode, standard theme colors) */}
           <motion.div
             variants={itemVariants}
-            className="hidden md:flex gap-16 lg:gap-24 mt-16 lg:mt-24 pointer-events-auto"
+            className="relative z-20 hidden md:flex gap-16 lg:gap-24 mt-16 lg:mt-24 pointer-events-auto"
           >
             <div className="flex flex-col">
               <span className="text-h2 font-light text-content-primary">
@@ -159,7 +162,7 @@ export default function HeroSection({ dict }: HeroProps) {
 
           <motion.div
             variants={itemVariants}
-            className="absolute bottom-12 ltr:left-16 lg:ltr:left-24 rtl:right-16 lg:rtl:right-24 hidden md:flex items-center gap-2 pointer-events-auto"
+            className="absolute bottom-12 ltr:left-16 lg:ltr:left-24 rtl:right-16 lg:rtl:right-24 hidden md:flex items-center gap-2 pointer-events-auto z-20"
           >
             <span className="text-small text-content-primary">
               {dict.scroll} &darr;
@@ -187,7 +190,6 @@ export default function HeroSection({ dict }: HeroProps) {
               stiffness: 50,
               delay: 0.4,
             }}
-            // THE FIX: Added pt-16 md:pt-0 here to permanently shift the image down on mobile, clearing the text paragraph
             className="w-full h-full relative pt-16 md:pt-0"
           >
             <Image
@@ -210,6 +212,7 @@ export default function HeroSection({ dict }: HeroProps) {
         </div>
 
         {/* Mobile Stats & Scroll Overlay */}
+        {/* THE FIX 5: Reverted mobile stats to standard rendering with theme colors */}
         <div className="absolute bottom-8 ltr:left-6 rtl:right-6 md:hidden z-30 flex flex-col gap-6 pointer-events-auto">
           <motion.div
             variants={containerVariants}
